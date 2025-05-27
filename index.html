@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manjula P - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    .container {
+      background: #fff;
+      max-width: 900px;
+      width: 100%;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      color: #2c3e50;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+    }
+    header p {
+      color: #7f8c8d;
+      font-weight: 300;
+      font-size: 1.2rem;
+      letter-spacing: 0.5px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-weight: 600;
+      font-size: 2rem;
+      color: #34495e;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .two-columns {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .info-list {
+      list-style: none;
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 400px;
+    }
+    .info-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .info-list li span {
+      font-weight: 600;
+      color: #2c3e50;
+      display: inline-block;
+      width: 150px;
+    }
+
+    .skills-list, .languages-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .skills-list li, .languages-list li {
+      background: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+    .skills-list li:hover, .languages-list li:hover {
+      background: #2980b9;
+    }
+
+    .contact-info {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 400px;
+      line-height: 1.8;
+    }
+    .contact-info a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #999;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .two-columns {
+        flex-direction: column;
+      }
+      .info-list, .contact-info {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Manjula P Portfolio">
+    <header>
+      <h1>Manjula P</h1>
+      <p>Advanced Portfolio Website</p>
+    </header>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <ul class="info-list" role="list">
+        <li><span>Date of Birth:</span> 24/05/2005</li>
+        <li><span>Age:</span> 20</li>
+        <li><span>Gender:</span> Female</li>
+        <li><span>Father's Name:</span> Prabhu</li>
+      </ul>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-list" role="list">
+        <li>User Interface Design</li>
+        <li>HTML5 (Advanced)</li>
+        <li>Basic CSS Knowledge</li>
+      </ul>
+    </section>
+
+    <section id="languages" aria-labelledby="languages-heading">
+      <h2 id="languages-heading">Languages Known</h2>
+      <ul class="languages-list" role="list">
+        <li>Kannada</li>
+        <li>English</li>
+        <li>Hindi</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <address class="contact-info">
+        Email: <a href="mailto:manjulapmanjulap78@gmail.com">manjulapmanjulap78@gmail.com</a><br />
+        Phone: <a href="tel:+636167776">636167776</a>
+      </address>
+    </section>
+
+    <footer>
+      <p>© 2024 Manjula P. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
+
